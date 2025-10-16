@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nadella Tej Karthik — Portfolio</title>
+  <meta name="description" content="Aspiring Software Engineer | Cloud & AI Enthusiast | 3rd Year CSD @ PVPSIT" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #60a5fa;
+      --accent2: #34d399;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      line-height: 1.55;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(96, 165, 250, .15), transparent 60%), var(--bg);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky; top: 0; backdrop-filter: blur(6px);
+      background: rgba(15, 23, 42, .65);
+      border-bottom: 1px solid var(--border); z-index: 10;
+    }
+    .nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; }
+    .nav h1 { margin: 0; font-size: 18px; }
+    .nav .links a { margin-left: 16px; font-size: 14px; color: var(--muted); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px 18px 64px; }
+    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; padding: 32px 0 10px; }
+    .tag { background: rgba(52, 211, 153, .15); color: var(--accent2); border: 1px solid rgba(52, 211, 153, .25); border-radius: 999px; padding: 6px 10px; font-size: 12px; }
+    .title { font-size: 40px; margin: 10px 0 12px; }
+    .subtitle { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
+    .cta a { display: inline-block; margin-right: 12px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); }
+    .btn { background: linear-gradient(90deg, var(--accent), var(--accent2)); color: #051016; border: none; font-weight: 600; }
+    .avatar { width: 160px; height: 160px; border-radius: 16px; border: 1px solid var(--border); object-fit: cover; box-shadow: 0 8px 40px rgba(0, 0, 0, .35); justify-self: end; }
+    section { margin-top: 42px; }
+    h2 { font-size: 22px; margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 16px; }
+    .cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .card { background: linear-gradient(180deg, #0b1220, #0a1020); border: 1px solid var(--border); border-radius: 14px; padding: 16px; transition: transform .12s ease; }
+    .card:hover { transform: translateY(-2px); border-color: #24324a; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .chip { font-size: 12px; color: var(--muted); border: 1px solid var(--border); padding: 4px 8px; border-radius: 999px; }
+    footer { margin-top: 44px; border-top: 1px solid var(--border); padding-top: 16px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .avatar { justify-self: start; }
+      .cols-3, .cols-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <h1>Nadella Tej Karthik</h1>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">OPEN TO INTERNSHIPS</span>
+        <h2 class="title">Nadella Tej Karthik</h2>
+        <p class="subtitle">Aspiring Software Engineer | 3rd-year CSD @ PVPSIT | Cloud & AI Enthusiast</p>
+        <div class="row cta">
+          <a class="btn" href="NadellaTejKarthikResume (1).pdf" target="_blank">Download Resume</a>
+          <a href="https://github.com/TejKarthik40" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/nadella-tej-karthik-b69811319/" target="_blank">LinkedIn</a>
+          <a href="mailto:nadellatejkarthik@gmail.com">Email</a>
+        </div>
+      </div>
+      <img class="avatar" src="assets/WIN_20251012_15_28_37_Pro.jpg" alt="Nadella Tej Karthik" />
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <div id="projectsGrid" class="grid cols-3"></div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="row">
+        <span class="chip">Languages: Python, C/C++, Java</span>
+        <span class="chip">Web: HTML, CSS, JavaScript</span>
+        <span class="chip">Data Science & ML</span>
+        <span class="chip">Cloud: AWS, Azure</span>
+        <span class="chip">DB: SQL, DBMS</span>
+        <span class="chip">Tools: Git, Linux, Docker</span>
+      </div>
+    </section>
+
+    <section id="education" class="grid cols-2">
+      <div class="card">
+        <strong>B.Tech — Computer Science (Data Science)</strong><br />
+        Prasad V Potluri Siddhartha Institute of Technology, Vijayawada<br />
+        <span class="muted">Aug 2023 – May 2027 • GPA: 9.29/10</span><br />
+        <span class="muted">Relevant coursework: DSA, DBMS, OS, CN, Cloud</span>
+      </div>
+      <div class="card">
+        <strong>Certifications & Training</strong>
+        <ul class="muted">
+          <li>Data Engineering Virtual Internship — AWS</li>
+          <li>Data Science Virtual Internship — Altair Engineering</li>
+          <li>NPTEL Programming with Java (Elite Silver Badge, Top 1%)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul class="muted">
+        <li><strong>NPTEL Achievement:</strong> Ranked in Top 1% in Programming with Java (Elite Silver Badge)</li>
+        <li><strong>Hackathon Participation:</strong> Active participation in regional coding contests</li>
+        <li><strong>Workshops:</strong> Attended technical workshops on Cloud & Data Science</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:nadellatejkarthik@gmail.com">nadellatejkarthik@gmail.com</a> • Phone: 9247632447 • Location: Gannavaram, Andhra Pradesh</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Nadella Tej Karthik. Built with HTML/CSS.
+    </footer>
+  </main>
+
+  <script>
+    const PROJECTS = [
+      {
+        title: "Mortgage Repayment Calculator",
+        about: "Built a responsive web app using HTML, CSS, and JavaScript to calculate monthly mortgage payments in real-time.",
+        tech: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/TejKarthik40",
+        demo: "https://mortage-repayment-virid.vercel.app/"
+      },
+      {
+        title: "AWS Data Engineering Internship",
+        about: "Hands-on experience with AWS S3, Glue, Redshift, and Lambda for building data pipelines and ETL processes.",
+        tech: ["AWS", "Data Engineering", "ETL"],
+        github: "https://github.com/TejKarthik40",
+        demo: null
+      },
+      {
+        title: "Altair Data Science Internship",
+        about: "Applied Python libraries (Pandas, NumPy, Scikit-learn) for data preprocessing and analysis during virtual internship.",
+        tech: ["Python", "Data Science", "Altair"],
+        github: "https://github.com/TejKarthik40",
+        demo: null
+      }
+    ];
+
+    const grid = document.getElementById("projectsGrid");
+    grid.innerHTML = PROJECTS.map(p => `
+      <article class="card">
+        <h3 class="proj-title">${p.title}</h3>
+        <p class="muted">${p.about}</p>
+        <div class="row" style="margin:8px 0 10px">${(p.tech || []).map(t => `<span class="chip">${t}</span>`).join("")}</div>
+        <p class="proj-links">
+          <a href="${p.github}" target="_blank">GitHub ↗</a>
+          ${p.demo ? `<a href="${p.demo}" target="_blank">Live Demo ↗</a>` : ""}
+        </p>
+      </article>
+    `).join("");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
